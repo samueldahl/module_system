@@ -1,5 +1,5 @@
-export function ismynamesam(){
-    var name = prompt("What is your name?");
+export function isMyNameSam(){
+    let name = prompt("What is your name?");
     if (name = "sam"){
         console.log("yes, your name is sam");
     }else{
