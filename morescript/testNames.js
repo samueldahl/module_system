@@ -13,4 +13,17 @@ function testName() {
             return 0;
     }
 }
-export {findName, testName};
+let names = ['Jared', 'Sam'];
+function returnNumber(name, namesArray) {
+    if(namesArray === undefined) {
+        namesArray = names;
+    }
+    let returnValue = -1;
+    namesArray.forEach(function (val, index) {
+        if(val === name) {
+            returnValue = index;
+        }
+    });
+    return returnValue;
+}
+export {findName, testName, returnNumber};
